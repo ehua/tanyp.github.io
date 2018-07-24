@@ -108,17 +108,17 @@
 
 
 
-  <meta name="description" content="Redis下载redis-4.0.7.tar.gz tar -zxvf redis-4.0.7.tar.gz -C /usr/local/redis cd /usr/local/redis/redis-4.0.7 make 允许外网链接vi redis-conf">
+  <meta name="description" content="Redis下载：redis-x.x.x.tar.gz 解压：tar -zxvf redis-x.x.x.tar.gz -C /usr/local/redis 进入：cd /usr/local/redis/redis-x.x.x 编译：make 允许外网链接vi redis-conf">
 <meta property="og:type" content="article">
 <meta property="og:title" content="CentOS 安装 Redis">
 <meta property="og:url" content="http://tanyp.me/2018/02/03/Redis/redis/index.html">
 <meta property="og:site_name" content="I&#39;m tanyp">
-<meta property="og:description" content="Redis下载redis-4.0.7.tar.gz tar -zxvf redis-4.0.7.tar.gz -C /usr/local/redis cd /usr/local/redis/redis-4.0.7 make 允许外网链接vi redis-conf">
+<meta property="og:description" content="Redis下载：redis-x.x.x.tar.gz 解压：tar -zxvf redis-x.x.x.tar.gz -C /usr/local/redis 进入：cd /usr/local/redis/redis-x.x.x 编译：make 允许外网链接vi redis-conf">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-23T08:40:10.000Z">
+<meta property="og:updated_time" content="2018-07-24T02:39:24.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CentOS 安装 Redis">
-<meta name="twitter:description" content="Redis下载redis-4.0.7.tar.gz tar -zxvf redis-4.0.7.tar.gz -C /usr/local/redis cd /usr/local/redis/redis-4.0.7 make 允许外网链接vi redis-conf">
+<meta name="twitter:description" content="Redis下载：redis-x.x.x.tar.gz 解压：tar -zxvf redis-x.x.x.tar.gz -C /usr/local/redis 进入：cd /usr/local/redis/redis-x.x.x 编译：make 允许外网链接vi redis-conf">
 
 
 
@@ -404,7 +404,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2018-07-23 16:40:10" itemprop="dateModified" datetime="2018-07-23T16:40:10+08:00">2018-07-23</time>
+                <time title="Modified: 2018-07-24 10:39:24" itemprop="dateModified" datetime="2018-07-24T10:39:24+08:00">2018-07-24</time>
               
             
           </span>
@@ -455,17 +455,17 @@
       
 
       
-        <h3 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h3><p>下载<a href="https://redis.io/download" target="_blank" rel="noopener">redis-4.0.7.tar.gz</a></p>
-<p>tar -zxvf redis-4.0.7.tar.gz -C /usr/local/redis</p>
-<p>cd /usr/local/redis/redis-4.0.7</p>
-<p>make</p>
+        <h3 id="Redis"><a href="#Redis" class="headerlink" title="Redis"></a>Redis</h3><p>下载：<a href="https://redis.io/download" target="_blank" rel="noopener">redis-x.x.x.tar.gz</a></p>
+<p>解压：tar -zxvf redis-x.x.x.tar.gz -C /usr/local/redis</p>
+<p>进入：cd /usr/local/redis/redis-x.x.x</p>
+<p>编译：make</p>
 <h3 id="允许外网链接"><a href="#允许外网链接" class="headerlink" title="允许外网链接"></a>允许外网链接</h3><p>vi redis-conf<br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">################################## NETWORK #####################################</span><br><span class="line"></span><br><span class="line"># By default, if no &quot;bind&quot; configuration directive is specified, Redis listens</span><br><span class="line"># for connections from all the network interfaces available on the server.</span><br><span class="line"># It is possible to listen to just one or multiple selected interfaces using</span><br><span class="line"># the &quot;bind&quot; configuration directive, followed by one or more IP addresses.</span><br><span class="line">#</span><br><span class="line"># Examples:</span><br><span class="line">#</span><br><span class="line"># bind 192.168.1.100 10.0.0.1</span><br><span class="line"># bind 127.0.0.1 ::1</span><br><span class="line">#</span><br><span class="line"># ~~~ WARNING ~~~ If the computer running Redis is directly exposed to the</span><br><span class="line"># internet, binding to all the interfaces is dangerous and will expose the</span><br><span class="line"># instance to everybody on the internet. So by default we uncomment the</span><br><span class="line"># following bind directive, that will force Redis to listen only into</span><br><span class="line"># the IPv4 lookback interface address (this means Redis will be able to</span><br><span class="line"># accept connections only from clients running into the same computer it</span><br><span class="line"># is running).</span><br><span class="line">#</span><br><span class="line"># IF YOU ARE SURE YOU WANT YOUR INSTANCE TO LISTEN TO ALL THE INTERFACES</span><br><span class="line"># JUST COMMENT THE FOLLOWING LINE.</span><br><span class="line"># ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</span><br><span class="line">bind 127.0.0.1</span><br></pre></td></tr></table></figure></p>
 <font color="red">把最后那个bind 127.0.0.1改为0.0.0.0</font>
 
-<h3 id="启动／停止redis"><a href="#启动／停止redis" class="headerlink" title="启动／停止redis"></a>启动／停止redis</h3><p>进入上面我们解压的目录：cd /usr/local/redis/redis-4.0.7</p>
+<h3 id="启动／停止redis"><a href="#启动／停止redis" class="headerlink" title="启动／停止redis"></a>启动／停止redis</h3><p>进入上面我们解压的目录：cd /usr/local/redis/redis-x.x.x</p>
 <h4 id="1-直接启动"><a href="#1-直接启动" class="headerlink" title="1.直接启动"></a>1.直接启动</h4><p>./redis-server &amp; (这个ctrl+c 不会中断服务) 默认找redis.conf配置文件<br>./redis-server (这个ctrl+c 会中断redis服务 ) 默认找redis.conf配置文件</p>
 <h4 id="2-指定配置文件启动"><a href="#2-指定配置文件启动" class="headerlink" title="2.指定配置文件启动"></a>2.指定配置文件启动</h4><p>./redis-server /6379.conf</p>
-<h4 id="3-开机启动"><a href="#3-开机启动" class="headerlink" title="3.开机启动"></a>3.开机启动</h4><p>复制redis配置文件<br>cp /usr/local/redis/redis-4.0.7/redis.conf /etc/redis/6379.conf<br>复制redis启动脚本<br>cp /usr/local/redis/redis-4.0.7/utils/redis_init_script /etc/init.d/redis<br>修改参数 vi /etc/init.d/redis<br>按i编辑，将下面EXEC和CLIEXEC改为指定redis的安装路径<br>EXEC=<font color="red">/usr/local/redis/redis-4.0.7/src/redis-server</font><br>CLIEXEC=<font color="red">/usr/local/redis/redis-4.0.7/src/redis-cli</font><br>修改完成后按 Esc 再按 :wq 回车 保存并退出</p>
+<h4 id="3-开机启动"><a href="#3-开机启动" class="headerlink" title="3.开机启动"></a>3.开机启动</h4><p>复制redis配置文件<br>cp /usr/local/redis/redis-x.x.x/redis.conf /etc/redis/6379.conf<br>复制redis启动脚本<br>cp /usr/local/redis/redis-x.x.x/utils/redis_init_script /etc/init.d/redis<br>修改参数 vi /etc/init.d/redis<br>按i编辑，将下面EXEC和CLIEXEC改为指定redis的安装路径<br>EXEC=<font color="red">/usr/local/redis/redis-x.x.x/src/redis-server</font><br>CLIEXEC=<font color="red">/usr/local/redis/redis-x.x.x/src/redis-cli</font><br>修改完成后按 Esc 再按 :wq 回车 保存并退出</p>
 <p>最后,启动redis<br>打开redis命令：service redis start<br>关闭redis命令：service redis stop<br>设为开机启动：chkconfig redis on<br>设为开机关闭：chkconfig redis off</p>
 <h3 id="设置密码"><a href="#设置密码" class="headerlink" title="设置密码"></a>设置密码</h3><p>vi /etc/redis/6379.conf<br>找到这一段，删除#解开注释，foobared就是密码，你可以随意编辑这个密码<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># requirepass foobared</span><br></pre></td></tr></table></figure></p>
 <p>重启生效</p>
