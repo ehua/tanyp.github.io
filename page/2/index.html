@@ -345,6 +345,168 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://tanyp.me/2018/01/26/centos/centos-2018-1-26/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Tan Youping">
+      <meta itemprop="description" content="You never know what you can do till you try.">
+      <meta itemprop="image" content="/images/index.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hi tanyp">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/01/26/centos/centos-2018-1-26/" itemprop="url">
+                  服务器重新安装系统，进行SSH连接发生错误处理方式
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2018-01-26 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-26T00:00:00+08:00">2018-01-26</time>
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/CentOS/" itemprop="url" rel="index"><span itemprop="name">CentOS</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="000-00-00-00-服务器端的ip地址"><a href="#000-00-00-00-服务器端的ip地址" class="headerlink" title="000.00.00.00 = 服务器端的ip地址"></a>000.00.00.00 = 服务器端的ip地址</h3><p>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<br>@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @<br>@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@<br>IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!<br>Someone could be eavesdropping on you right now (man-in-the-middle attack)!<br>It is also possible that a host key has just been changed.<br>The fingerprint for the ECDSA key sent by the remote host is<br>SHA256:keQgQ96khkDJLVJE/lfaS39A68cJ2DjDbK7XTY4ZoHI.<br>Please contact your system administrator.<br>Add correct host key in /Users/luck/.ssh/known_hosts to get rid of this message.<br>Offending ECDSA key in /Users/luck/.ssh/known_hosts:1<br>ECDSA host key for 000.00.00.00 has changed and you have requested strict checking.<br>Host key verification failed.</p>
+<h3 id="出现这个问题的原因是-第一次使用SSH连接时，会生成一个认证，储存在客户端的known-hosts中"><a href="#出现这个问题的原因是-第一次使用SSH连接时，会生成一个认证，储存在客户端的known-hosts中" class="headerlink" title="出现这个问题的原因是,第一次使用SSH连接时，会生成一个认证，储存在客户端的known_hosts中."></a>出现这个问题的原因是,第一次使用SSH连接时，会生成一个认证，储存在客户端的known_hosts中.</h3><h3 id="解决办法：ssh-keygen-R-服务器端的ip地址"><a href="#解决办法：ssh-keygen-R-服务器端的ip地址" class="headerlink" title="解决办法：ssh-keygen -R 服务器端的ip地址"></a>解决办法：ssh-keygen -R 服务器端的ip地址</h3>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/01/26/centos/centos-2018-1-26/#more" rel="contents">
+              Read more &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+    <div>
+      
+    </div>
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://tanyp.me/2018/01/22/java/java-date-2018-01-22/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -394,22 +556,6 @@
               <time title="Created: 2018-01-22 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-22T00:00:00+08:00">2018-01-22</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-01-31 14:45:32" itemprop="dateModified" datetime="2018-01-31T14:45:32+08:00">2018-01-31</time>
-              
             
           </span>
 
@@ -570,22 +716,6 @@
               <time title="Created: 2018-01-11 00:00:00" itemprop="dateCreated datePublished" datetime="2018-01-11T00:00:00+08:00">2018-01-11</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-01-29 17:24:37" itemprop="dateModified" datetime="2018-01-29T17:24:37+08:00">2018-01-29</time>
-              
             
           </span>
 
@@ -749,22 +879,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-01-29 17:24:24" itemprop="dateModified" datetime="2018-01-29T17:24:24+08:00">2018-01-29</time>
-              
-            
           </span>
 
           
@@ -927,22 +1041,6 @@
               <time title="Created: 2017-12-22 00:00:00" itemprop="dateCreated datePublished" datetime="2017-12-22T00:00:00+08:00">2017-12-22</time>
             
 
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-01-29 17:23:44" itemprop="dateModified" datetime="2018-01-29T17:23:44+08:00">2018-01-29</time>
-              
             
           </span>
 
@@ -1108,22 +1206,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-02-05 10:30:37" itemprop="dateModified" datetime="2018-02-05T10:30:37+08:00">2018-02-05</time>
-              
-            
           </span>
 
           
@@ -1286,22 +1368,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-01-29 16:29:41" itemprop="dateModified" datetime="2018-01-29T16:29:41+08:00">2018-01-29</time>
-              
-            
           </span>
 
           
@@ -1459,22 +1525,6 @@
             
 
             
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">Edited on</span>
-                
-                <time title="Modified: 2018-01-29 17:25:35" itemprop="dateModified" datetime="2018-01-29T17:25:35+08:00">2018-01-29</time>
-              
-            
           </span>
 
           
@@ -1628,7 +1678,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">17</span>
+                    <span class="site-state-item-count">18</span>
                     <span class="site-state-item-name">posts</span>
                   </a>
                 </div>
@@ -1704,20 +1754,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                友情链接
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="www.baidu.com" title="虚位以待" target="_blank">虚位以待</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
